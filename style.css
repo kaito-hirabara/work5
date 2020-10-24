@@ -24,28 +24,11 @@ select {
 }
 /* ------------------　ヘッダー　----------------- */
 header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  width: 100vw;
-  top: 3;
-  position: fixed;
-  z-index: 8;
+  width: 98%;
+  margin: 0 auto;
 }
-.page-info {
-  display: flex;
-  margin-left: 10px;
-}
-.page-info img {
+.logo {
   width: 50px;
-  height: 50px;
-  margin: 13px 10px 0 26px;
-}
-.page-info-ul {
-  display: flex;
-}
-.page-info-ul li {
-  padding: 25px 16px;
 }
 li a:active,
 li a:hover {
@@ -54,9 +37,6 @@ li a:hover {
 li a {
   color: #432;
   font-size: 0.9rem;
-}
-.start {
-  padding: 25px 40px;
 }
 .start a {
   color: white;
@@ -69,9 +49,9 @@ li a {
 .top-wrapper {
   background-image: url(images/top.jpg);
   background-size: cover;
-  height: 100vh;
-  position:relative;
   z-index: 1;
+  height: 100vh;
+  padding-top: 12%;
 }
 /* ------------------ スタートアップ ----------------- */
 .setup {
@@ -79,9 +59,7 @@ li a {
   width: 480px;
   height: 430px;
   border-radius: 5px;
-  position: absolute;
-  top: 150px;
-  left: 880px;
+  margin-left: 55%;
   z-index: 5;
 }
 .set-up h1 {
@@ -126,11 +104,6 @@ input {
   margin-top: 10px;
 }
 /* ----------------- コンテンツ ---------------- */
-.wrapper {
-  width: 76%;
-  margin: 0 auto;
-  max-width: 1260px;
-}
 .intros {
   display: flex;
   justify-content: space-between;
@@ -139,19 +112,13 @@ input {
   border-bottom: 5px #dcdcdc solid;
 }
 .intro-one {
-  width: 40%;
   margin-top: 40px;
 }
-.intro-two {
-  width: 45%;
-}
-
 .intro-one h2,
 .intro-two h2 {
   font-size: 3rem;
   text-align: center;
 }
-
 .intro-p1,
 .intro-p2 {
   margin-top: 30px;
@@ -170,9 +137,6 @@ input {
   margin-top: 50px;
   border-bottom: 5px #dcdcdc solid; 
   padding-bottom: 150px;
-}
-.feature {
-  width: 30%;
 }
 .feature img {
   width: 72px;
@@ -195,9 +159,6 @@ input {
   justify-content: space-between;
   margin-top: 150px;
 }
-.content-i {
-  width: 40%;
-}
 .content-i img {
   width: 30px;
   height: 35px;
@@ -216,9 +177,6 @@ input {
   border-radius: 5px;
   padding: 8px 15px;
 }
-.content-picture {
-  width: 50%;
-}
 .sft {
   text-align: center;
   margin-top: 120px;
@@ -229,10 +187,6 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.safety-1 {
-  width: 40%;
-  margin-left: 60px;
-}
 .safety-1 p,
 .safety-2 ul {
   color: #432;
@@ -240,18 +194,12 @@ input {
 }
 .safety-1 a {
   display: inline-block;
-  margin: 15px 0 ;
+  margin: 15px 0;
   color: #0bd;
 }
 .man {
   margin: 70px auto 0;
   width: 92%;
-}
-.safety-2 {
-  width: 45%;
-}
-.safety-2 ul {
-  margin-left: 50px;
 }
 .kazu {
   text-align: center;
@@ -277,12 +225,6 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.qstn-1 {
-  width: 49%;
-}
-.qstn-2 {
-  width: 49%;
-}
 .li-q{
   padding: 15px 0;
   border-bottom: 1px #dcdcdc solid;
@@ -301,9 +243,6 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.hosting {
-  width: 32%;
-}
 .hosting h4 {
   margin-top: 5px;
   color: #432;
@@ -318,16 +257,11 @@ input {
   width: 100%;
   height: 441px;
   margin: 100px auto 0 auto;
-  position: relative;
-}
-.kaishi img {
-  height: 100%;
+  background-image: url(images/bridge.jpg);
+  background-size: cover;
 }
 .kaishi div {
-  position: absolute;
-  top: 80px;
-  left: 110px;
-  width: 45%;;
+  padding: 8%;
 }
 .kaishi h2{
   color: #fff;
@@ -340,7 +274,7 @@ input {
   padding: 10px 8px;
   border-radius: 5px;
   margin-top: 30px;
-  width: 50%;
+  width: 20%;
   color: #432;
 }
 /* -------------------　フッター　-------------------- */
@@ -384,4 +318,172 @@ footer {
 .cln-1 {
   height: 230px;
 }
-
+.for-in {
+  display: inline;
+} 
+@media screen and (max-width: 768px) {
+  p, a {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  h1, h2 {
+    font-size: 1.4rem !important;
+    text-align: center;
+  }
+  h3, h4, h5 {
+    text-align: center;
+    font-size: 1rem !important;
+  }
+  .top-wrapper {
+    background-size: cover;
+    height: 200px;
+  }
+  .setup {
+    display: none;
+  }
+  .contents-f,
+  .kikaku {
+    display: none;
+  }
+  .kaishi {
+    margin: 0;
+    height: auto;
+    max-width: 100%;
+  }
+  .intros {
+    padding-bottom: 25%;
+    margin: 0;
+  }
+  .intro-one {
+    margin-bottom: 5%;
+  }
+  .intro-p1 {
+    margin: 6% 0;
+  }
+  .sft {
+    margin: 30% 0 0;
+  }
+  .feature {
+    text-align: center;
+  }
+  .features {
+    padding-bottom: 30%;
+  }
+  .feature p {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .feature h3 {
+    display: inline;
+  }
+  .feature img {
+    width: 50px;
+  }
+  .safety-1 p {
+    width: 90%;
+    margin: 8% auto;
+  }
+  .safety {
+    text-align: center;
+  }
+  .safety-2 ul {
+    padding: 0;
+    margin-top: 5%;
+  }
+  .safety-2 li {
+    padding: 5px 0;
+  }
+  .man {
+    margin: 10% auto 0;
+  }
+  .content {
+    margin-top: 20%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .features {
+    padding-bottom: 20%;
+  }
+  .jise {
+    margin-top: 25%;
+  }
+  .li-q a {
+    font-size: 0.8rem;
+  }
+  .qstn-1 ul,
+  .qstn-2 ul {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .qstns {
+    padding: 10% 0;
+  }
+  .detail {
+    margin-top: 20%;
+  }
+  .hostings {
+    padding: 10% 0;
+  }
+  .hosting {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .hosting h4 {
+    padding-top: 10px;
+  }
+  .hosting p {
+    margin: 0;
+  }
+  .kaishi a {
+    padding: 10px 8px;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 40%;
+  }
+  .header-right {
+    display: none;
+  }
+  .form-wrapper {
+    background-color: #f5f5f5;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  .form-wrapper h1 {
+    margin: 0 auto 8%;
+  }
+  .kind {
+    width: 100%;
+    height: 50px;
+    margin: 5% 0 0 0;
+  }
+  .number {
+    width: 100%;
+    height: 50px;
+    margin: 5% 0 0 0;
+  }
+  .for-p-1 {
+    padding-right: 3px;
+  }
+  .for-p-2 {
+    padding-left: 3px;
+  }
+  .for-m-a {
+    display: block;
+    margin-top: 3%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #008080;
+    color: #fff;
+    width: 100%;
+    padding: 12px 10px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .top-wrapper {
+    height: 400px;
+  }
+}
