@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* ----------------------　共通部分 ----------------------- */
+body {
+    font-size: 100%;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+h1 {
+    font-family: 'Noto Serif JP', serif;
+}
+p, a{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.9rem;
+}
+/* ----------------------　コンテンツ  ----------------------- */
+header {
+    padding: 0 4% 0 8%;
+    border-bottom: 0.8px #d3d3d3 solid;
+}
+.logo {
+    width: 110px;
+    margin-top: 2px;
+} 
+.main {
+    background-size: cover;
+    margin-top: 60px;
+    padding-bottom: 15%;
+    transform: skewY(-0.8deg);
+}
+.main > * {
+    transform: skewY(1.2deg);
+}
+.btn-apply-1 {
+    background-color: #20b2aa;
+    border-radius: 20px;
+    padding: 5px 3px;
+    border: 2px #20b2aa solid;
+} 
+.btn-apply-2 {
+    display: inline-block;
+    background-color: #20b2aa;
+    border: 2px #20b2aa solid;
+    border-radius: 25px;
+    color: white;
+    margin: 0 16%;
+    padding: 10px 50px;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    opacity: 0;
+    animation: fadein-bottom 2s 1.5s forwards;
+}
+.nav-item a:hover {
+    color: #1e90ff !important;
+}
+#ba1-h:hover,
+.btn-apply-2:hover {
+    text-decoration: none;
+    color: black !important;
+    background-color: white;
+    border: 2px #20b2aa solid;
+    opacity: 1.0;
+}
+#for-hover {
+    color: #1e90ff;
+}
+.catchphrase {
+    line-height: 1.5;
+    padding: 13% 0 2% 16%;
+    font-size: 3rem;
+    opacity: 0;
+    animation: fadein-top 2s 1.5s forwards;
+ }
+@keyframes fadein-top {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+}
+@keyframes fadein-bottom {
+    0% {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+}
+.wrapper {
+    text-align: center;
+}
+.for-h {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+.for-spacing-1 {
+    margin-top: 30px;
+}
+.servies-h {
+    margin-bottom: 20px;
+    padding-top: 10%;
+}
+.fadein {
+	opacity : 0;
+	transform : translate(0, 100px);
+	transition : all 800ms;
+}
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+}
+.dly1 {
+	-moz-transition-delay:200ms;
+	-webkit-transition-delay:200ms;
+	-o-transition-delay:200ms;
+	-ms-transition-delay:200ms;
+}
+.dly2 {
+	-moz-transition-delay:400ms;
+	-webkit-transition-delay:400ms;
+	-o-transition-delay:400ms;
+	-ms-transition-delay:400ms;
+}
+.servies-text {
+    font-size: 0.8rem;
+    padding: 5% 10%;
+}
+.wrapper2 {
+    background-color: #EEF7FB;
+    margin-top: 10%;
+    padding-top: 6%;
+}
+.plan {
+    border: 1px solid rgba(0,0,0,.125);
+}
+.plan h4 {
+    color: white;
+    border-radius: 5px 5px 0 0;
+    padding: 3% 0;
+}
+.plan h3 {
+    margin: 5% 0;
+    color: #ff4500;
+}
+span {
+    font-size: 1.1rem;
+    color: #696969;
+}
+.for-border-1 {
+    border-radius: 0;
+}
+.for-border-2 {
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-right: none;
+    border-left: none;
+}
+.for-border-2 img {
+    width: 30px;
+}
+/* --------------------　レスポンシブ（タブレット＆スマホ） ------------------------- */
+@media screen and (max-width: 768px) {
+    .servies {
+        margin-bottom: 30px;
+    }
+    .btn-apply-1 {
+        width: 150px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .catchphrase {
+        font-size: 1.8rem;
+    }
+    .btn-apply-2 {
+        padding: 5px 25px;
+        font-size: 0.9rem;
+    }
+    .plan {
+        margin-bottom: 12%;
+    }
+}
+/* ----------------------　レスポンシブ（スマホ） ----------------------- */
+@media screen and (max-width: 575px) {
+    p {
+        font-size: 0.7rem;
+    }
+    .catchphrase {
+        font-size: 1.1rem;
+        padding-left: 10%;
+    }
+    .btn-apply-2 {
+        padding: 5px 15px;
+        font-size: 0.6rem;
+        margin-left: 10%;
+    }
+    .servies-h {
+        font-size: 1.1rem;
+        margin: 5%;
+    }
+    .for-spacing-1 {
+        margin: 0;
+    }
+}
